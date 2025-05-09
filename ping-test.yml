@@ -1,0 +1,13 @@
+
+---
+- name: Ping test op Linux en Windows hosts
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Ping Linux hosts
+      ping:
+      when: "'linux' in group_names"
+
+    - name: Ping Windows hosts
+      win_ping:
+      when: "'windows' in group_names"
