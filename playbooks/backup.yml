@@ -1,0 +1,9 @@
+---
+- name: Backup Router Configuration
+  hosts: router
+  gather_facts: no
+
+  tasks:
+    - name: Backup running config
+      ios_config:
+        backup: yes

@@ -1,0 +1,17 @@
+---
+- name: Configure Cisco Router
+  hosts: router
+  gather_facts: no
+
+  tasks:
+    - name: Set hostname
+      ios_config:
+        lines:
+          - hostname R1-P2K1
+
+    - name: Configure interface
+      ios_config:
+        parents: "interface GigabitEthernet1"
+        lines:
+          - ip address 10.0.0.1 255.255.255.0
+          - no shutdown
