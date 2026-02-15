@@ -84,3 +84,6 @@ Creates a configuration backup of the router.
 - Assignment: `docs/training-assignment.md`
 - Rubric: `docs/rubric.md`
 - Architecture: `docs/architecture.md`
+
+## Documentation
+See the full documentation in the [docs folder](docs/README.md).
