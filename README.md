@@ -1,7 +1,4 @@
-cd D:\GitHub\ansible
-
-@'
-# Ansible Automation Training
+﻿# Ansible Automation Training
 
 ![Ansible](https://img.shields.io/badge/Ansible-Automation-red?logo=ansible)
 ![IaC](https://img.shields.io/badge/IaC-Infrastructure--as--Code-blue)
@@ -87,24 +84,3 @@ Creates a configuration backup of the router.
 - Assignment: `docs/training-assignment.md`
 - Rubric: `docs/rubric.md`
 - Architecture: `docs/architecture.md`
-'@ | Set-Content -Encoding UTF8 .\README.md
-
-@'
-# Architecture Overview
-
-## Components
-
-- **Control Node**: the machine where Ansible is installed.
-- **Managed Nodes**: Linux servers and network devices defined in the inventory.
-
-## Communication
-
-- Linux hosts: SSH
-- Cisco devices: network modules (e.g. `ios_config`) over SSH
-
-## Automation flow
-
-Control Node -> Inventory -> Playbook -> Module -> Target System
-'@ | Set-Content -Encoding UTF8 .\docs\architecture.md
-
-"README.md + docs/architecture.md updated (safe fences: ~~~)."
